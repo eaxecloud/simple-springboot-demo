@@ -1,0 +1,1 @@
+INSERT INTO USER(id, name, email, age) values (1, 'root', 'root@email.com', 20);
