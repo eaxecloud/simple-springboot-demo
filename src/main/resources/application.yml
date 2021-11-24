@@ -35,7 +35,7 @@ logging:
   level:
     root: INFO
     org:
-      hibernate: DEBUG
+      hibernate: INFO
     xyz:
       fullstacks:
         demo: DEBUG

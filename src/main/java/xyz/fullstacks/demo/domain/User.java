@@ -1,5 +1,7 @@
 package xyz.fullstacks.demo.domain;
 
+import java.io.Serializable;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -12,9 +14,12 @@ import lombok.Data;
 @Data
 @Entity
 @Table(name="user")
-public class User {
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+public class User implements Serializable{
+
+	private static final long serialVersionUID = -508967921456052375L;
+
+	@Id
+//    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
  
     @Column
